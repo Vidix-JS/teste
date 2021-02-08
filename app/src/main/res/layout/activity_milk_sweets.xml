@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MilkSweets">
+    <Button
+        android:id="@+id/glazed_curds"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="Глазированные сырки"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toTopOf="@id/pudding"
+
+        />
+    <Button
+        android:id="@+id/pudding"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Пудинги"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        app:layout_constraintTop_toBottomOf="@+id/glazed_curds"
+        tools:ignore="MissingConstraints"
+
+        />
+    <Button
+        android:id="@+id/milk_yogurt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="Йогурты"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/pudding"/>
+    <Button
+        android:id="@+id/ice_cream"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:text="Мороженые"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/milk_yogurt"/>
+
+
+
+    <ImageButton
+        android:id="@+id/btn_Img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="4dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_panier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/ic_left_arrow"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
